@@ -1,0 +1,362 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Netflix Sans,Helvetica Neue,Segoe UI,Roboto,Ubuntu,sans-serif";
+}
+
+body {
+  --primary_btn_color: rgb(193, 17, 25);
+  --primary_text_color: rgb(255, 255, 255);
+  --input_background_color: rgba(30, 20, 17, 0.5);
+  --main_background_color: rgb(35, 35, 35);
+
+  --fs_heading: 2.2rem;
+  --fs_p_text: 1.3rem;
+  background-color: var(--main_background_color);
+
+}
+/* *******************************Banner section *********************************************/
+
+.banner__container {
+  width: 100%;
+  /* border: 3px solid rgb(87, 77, 235); */
+  background-image: linear-gradient(
+      to top,
+      rgba(0, 0, 0, 0.8) 0,
+      rgba(0, 0, 0, 0.5) 60%,
+      rgba(0, 0, 0, 0.8) 100%
+    ),
+    url("https://assets.nflxext.com/ffe/siteui/vlv3/ca6a7616-0acb-4bc5-be25-c4deef0419a7/887aa07e-2ac1-43bc-bddf-df980694a096/LK-en-20231211-popsignuptwoweeks-perspective_alpha_website_medium.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: rgb(0, 0, 0, 0.5);
+  display: flex;
+  flex-direction: column;
+}
+
+.nav {
+  padding: 20px;
+}
+
+.nav__container {
+  /* border: 2px solid black; */
+  display: flex;
+  height: 50px;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1000px;
+  margin: 0 auto;
+  z-index: 999;
+}
+.sign__btn {
+  height: 70%;
+  padding: 0 15px;
+  font-size: 15px;
+  background-color: var(--primary_btn_color);
+  color: var(--primary_text_color);
+  font-weight: 600;
+  border: none;
+  border-radius: 4px;
+}
+
+.nav__container img {
+  height: 50px;
+  object-fit: contain;
+}
+.text__container {
+  /* border: 2px solid black; */
+  max-width: 1000px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  padding-bottom: 22%;
+}
+.header__text {
+  font-size: var(--fs_heading);
+  text-align: center;
+  margin-top: 1em;
+  margin-bottom: 0.6em;
+  color: var(--primary_text_color);
+  width: 90%;
+}
+.p__text {
+  text-align: center;
+  font-size: var(--fs_p_text);
+  margin: 0 2em;
+  color: var(--primary_text_color);
+}
+
+.p__text p {
+  margin-bottom: 1em;
+}
+
+.p__text h3 {
+  text-decoration: none;
+  font-weight: lighter;
+  font-size: var(--fs_p_text);
+  margin-bottom: 1em;
+}
+.form__container {
+  display: flex;
+  flex-direction: column;
+  /* border: 2px solid black; */
+  align-items: center;
+  margin-bottom: 1em;
+  width: 80%;
+}
+.form__container input {
+  width: 100%;
+  height: 20px;
+  margin-bottom: 15px;
+  background-color: var(--input_background_color);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  padding: 10px;
+  font-size: 1rem;
+  color: var(--primary_text_color);
+  border-radius: 4px;
+}
+.form__container input:focus {
+  outline: none;
+}
+.form__container button {
+  width: 156px;
+  height: 48px;
+  font-size: 1.2rem;
+  background-color: var(--primary_btn_color);
+  color: var(--primary_text_color);
+  border: none;
+  border-radius: 4px;
+  font-weight: 500;
+}
+
+@media (min-width: 600px) {
+  .form__container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 1em;
+    width: 80%;
+    justify-content: center;
+    gap: 10px;
+  }
+  .form__container input {
+    width: 44%;
+    height: 26px;
+    background-color: rgba(0, 0, 0, 0.5);
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    padding: 10px;
+    font-size: 1rem;
+    color: var(--primary_text_color);
+    margin-bottom: 0;
+  }
+  .text__container {
+    /* border: 2px solid black; */
+    max-width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding-bottom: 15%;
+    margin-top: 2.6em;
+  }
+}
+
+@media (min-width: 960px) {
+  .header__text {
+    font-size: 3.2rem;
+    text-align: center;
+    margin-top: 1em;
+    margin-bottom: 0.6em;
+    color: var(--primary_text_color);
+    width: 90%;
+  }
+  .text__container {
+    /* border: 2px solid black; */
+    max-width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding-bottom: 15%;
+    margin-top: 9.6em;
+  }
+
+  .nav__container img {
+    height: 75px;
+    object-fit: contain;
+  }
+  .banner__container {
+    width: 100%;
+    /* border: 3px solid rgb(87, 77, 235); */
+    background-image: linear-gradient(
+        to top,
+        rgba(0, 0, 0, 0.8) 0,
+        rgba(0, 0, 0, 0.5) 60%,
+        rgba(0, 0, 0, 0.8) 100%
+      ),
+      url(https://assets.nflxext.com/ffe/siteui/vlv3/ca6a7616-0acb-4bc5-be25-c4deef0419a7/887aa07e-2ac1-43bc-bddf-df980694a096/LK-en-20231211-popsignuptwoweeks-perspective_alpha_website_medium.jpg);
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-color: rgb(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: column;
+  }
+  .p__text {
+    text-align: center;
+    font-size: 1.6rem;
+    margin: 0 2em;
+    color: var(--primary_text_color);
+  }
+  .p__text h3 {
+    text-decoration: none;
+    font-weight: lighter;
+    font-size: 1.5rem;
+    margin-bottom: 1em;
+  }
+}
+
+@media (max-width: 200px) {
+  .nav__container {
+    /* border: 2px solid black; */
+    display: flex;
+    flex-direction: column;
+    height: 50px;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1000px;
+    margin: 0 auto;
+    z-index: 999;
+  }
+}
+
+/* **********main************************ */
+
+.main {
+  background-color: var(--main_background_color);
+  padding-top: 1em;
+}
+.section__container {
+  background-color: rgb(0, 0, 0);
+  margin-bottom: 1rem;
+}
+
+.container {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  padding-bottom: 1em;
+  margin-bottom: 1em;
+  max-width: 900px;
+
+  margin: 0 auto;
+}
+
+.sub1 {
+  display: flex;
+  color: var(--primary_text_color);
+  align-items: center;
+  padding: 1em;
+  flex: 1;
+}
+.sub2 {
+  order: -1;
+  color: var(--primary_text_color);
+  align-items: center;
+  padding: 2em;
+  padding-bottom: 0;
+  text-align: center;
+  flex: 1;
+}
+.sub1 img {
+  display: block;
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+}
+.sub2 h1 {
+  font-size: 2rem;
+  margin-bottom: 0.5em;
+}
+.sub2 p {
+  font-size: 1.3rem;
+}
+
+@media (min-width: 960px) {
+  .container {
+    background-color: rgb(0, 0, 0);
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 1em;
+    align-items: center;
+    justify-content: center;
+  }
+  .sub1 {
+    display: flex;
+    color: var(--primary_text_color);
+    align-items: center;
+    padding: 0;
+  }
+  .sub2 {
+    order: 1;
+    color: var(--primary_text_color);
+    align-items: center;
+    padding: 0;
+    padding-bottom: 0;
+    padding-right: 2em;
+    text-align: start;
+  }
+}
+
+/* ***************footer********************** */
+
+footer {
+  color: var(--primary_text_color);
+  background-color: rgb(0, 0, 0);
+  color: rgb(179, 179, 179);
+}
+
+a {
+  display: block;
+  color: rgb(179, 179, 179);
+  padding-bottom: 1em;
+}
+
+.footer__container {
+  display: flex;
+  flex-direction: column;
+  max-width: 900px;
+  padding: 1em;
+  margin: 0 auto;
+}
+.footer__container h3{
+  text-decoration: underline;
+  padding-bottom: 1.5em;
+}
+.links__container {
+  display: flex;
+}
+.link__sub1 {
+  flex: 1;
+  padding-right: 1em;
+
+}
+.link__sub2 {
+  flex: 1;
+}
+
+@media (min-width:960px){
+  .link__sub2 {
+    flex: 1;
+    columns: 2;
+  }
+  .link__sub1 {
+    flex: 1;
+    columns: 2;
+  }
+
+}
